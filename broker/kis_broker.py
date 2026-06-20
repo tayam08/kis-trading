@@ -2,8 +2,11 @@ import os
 import time
 
 import requests
+from dotenv import load_dotenv
 
 from broker.base import Broker
+
+load_dotenv()
 
 
 class KISAPIError(Exception):
